@@ -26,7 +26,7 @@ TEST(task3, test3)
     dict[{"the", "read"}].push_back("<Last_Prefix>");
     Markov Generator(dict, 100);
     string output = Generator.TextGenerator();
-    if (output[0] == 'E')
+    if (output[0] == 'L')
         ASSERT_STREQ("Live the read ", output.c_str());
     else
         ASSERT_EQ('t', output[0]);
